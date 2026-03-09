@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><!--201810-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>佛衛慈悲台-網路直播</title>
+<!--<link href="css/word.css" rel="stylesheet" type="text/css">-->
+<style type="text/css">
+<!--
+--> 
+</style>
+<link href="css/bts/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/bts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="https://hievent.hinet.net/js/flowplayer-3.2.13.min.js"></script>
+ 
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+window.location.assign("https://ottlive.hinet.net/webapp/bts/live");
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+//-->
+
+$(document).ready(function() {
+    $("#btn_playervjs").click(function(){
+        
+        // alert("btn_playervjs click");
+        // loadIframe("player","http://mp4aptest.media.hinet.net:8089/testplayer/VideoJS/index.jsp?VideoURL=http://cbc-ott2b.cdn.hinet.net/live_cbc/test1/playlist.m3u8&widthString=660&heightString=370");
+      loadIframe("player","http://webplayer-cds.cdn.hinet.net/ottplayer/VideoJS/index.jsp?cp_name=bts&playerid=3&ch_name=btsw01");
+        
+        
+    }); 
+     $("#btn_playerhievent").click(function(){
+        
+        // alert("btn_playerhievent click");
+                             
+        //loadIframe("player","https://hievent.hinet.net/api/hieventPlayer_iframe.php?channel=L&id=VWpvZ0Y0ZGwxeThxa3c0NTVEWHM0c0hqOG9XSjFtd3IxZXh1ZzBEcWZxRlh4RTFEa204K2Q2YUhCcFgrY0VXVEFkSS9zWmg0NFNjMHk1WnBYUm1XRHc9PQ==");
+		loadIframe("player","http://hievent.hinet.net/api/hieventPlayerJw_iframe.php?channel=L&id=ZDYvQ0xtUUNLVWRwVG55dTB1Zm5BU2ZUeXJVelJlMFZhU1hPbExWRVQ3QlRvS3JaV1I3OFJqQ1NleDBZTHZoc3BvN0Q4bnBXTUhOWE9vekdVQ3Jzbmc9PQ==");
+    }); 
+});
+
+function loadIframe(iframeName, url) {
+    var $iframe = $('#' + iframeName);
+    if ( $iframe.length ) {
+        $iframe.attr('src',url);   
+        return false;
+    }
+    return true;
+}
+</script>
+
+</head><body>
+<div class="liveOnline">
+  <div class="align_r"><span class="text_darkblue">佛衛慈悲台</span></div>
+  <div class="gap_b20 gap_t20"><img src="images/bts/live.gif"></div>
+  <div>
+    <div id="btn_playerhievent" style="display:inline-block;"><button>站點1</button></div>
+    <div id="btn_playervjs" style="display:inline-block;"><button>站點2</button></div>
+    <div style="display:inline-block;"><p>若訊號無法正常播放，請點選「站點2」收視</p></div>
+  </div>
+  <iframe id="player" src="http://hievent.hinet.net/api/hieventPlayerJw_iframe.php?channel=L&id=ZDYvQ0xtUUNLVWRwVG55dTB1Zm5BU2ZUeXJVelJlMFZhU1hPbExWRVQ3QlRvS3JaV1I3OFJqQ1NleDBZTHZoc3BvN0Q4bnBXTUhOWE9vekdVQ3Jzbmc9PQ==" width="660" height="370" frameborder="0" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+
+  <iframe src="http://hievent.hinet.net/api/show_live_channel.php?sn=bjnqlaxw3mvgdrd7" width="640" height="410" frameborder="0" scrolling="no"></iframe>
+  <img src="images/20200609.jpg" width="640" height="41" />
+<ul class="liveOnline_footer">
+    <li class="name">佛衛慈悲台</li>
+    <li><a href="mailto:btsnet@ms11.hinet.net" target="_blank">觀眾服務信箱</a>   電話：<span class="text_blue">07-5356096</span> 傳真：<span class="text_blue">07-3324313</span></li>
+    <li>劃撥帳號：<span class="text_blue">31350670</span>　戶名：<span class="text_blue">佛衛電視台股份有限公司</span></li>
+    <li>國內護持匯款銀行名稱：<span class="text_blue">台北富邦銀行　新營分行</span></li>
+    <li>銀行電匯代號：<span class="text_blue">7347 ATM(012)</span></li>
+    <li>銀行帳號：<span class="text_blue">734102001315</span> 　戶名：<span class="text_blue">佛衛電視台股份有限公司</span></li>
+    <li>國外(外幣)護持銀行帳戶：<span class="text_blue">BANK OF TAIWAN LING YA BRANCH</span></li>
+    <li>SWIFT : <span class="text_blue">BKTWTWTP062</span></li>
+    <li>A/C NO：<span class="text_blue">062007068101</span>      A/C NAME：<span class="text_blue">FO WEI TV STATION CO., LTD</span>.</li>
+  </ul>
+  <img src="images/bts/banner.jpg" class="gap_b20 gap_t5">
+  <div class="align_c gap_b20"><a href="home.html" target="_blank"><img src="images/bts/house.jpg" width="50" height="50"></a></div>
+</div>
+</body>
+<script src="js/imagePath.js"></script>
+</html>
